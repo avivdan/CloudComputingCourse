@@ -38,53 +38,53 @@ producer.on("ready", () => {
 
 // producer.disconnect()
 
-// function getRandomInt(max) {
-//     return Math.floor(Math.random() * max);
-// }
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
-// function getBranchName(branch_id) {
-//     switch (branch_id){
-//         case 1:
-//             return "papa_jones";
-//             break;
-//         case 2:
-//             return "dominos";
-//             break;
-//         case 3:
-//             return "hat";
-//             break;
-//         default:
-//             return "sod";
-//             break;
-//         }       
-// }
+function getBranchName(branch_id) {
+    switch (branch_id){
+        case 1:
+            return "papa_jones";
+            break;
+        case 2:
+            return "dominos";
+            break;
+        case 3:
+            return "hat";
+            break;
+        default:
+            return "sod";
+            break;
+        }       
+}
 
-// function getRandomToppings(numberOfTopping){
-//     var items = ["olives"," pepper", "mushrooms", "jalapinio", "onion"];
-//     var newItems = [];
+function getRandomToppings(numberOfTopping){
+    var items = ["olives"," pepper", "mushrooms", "jalapinio", "onion"];
+    var newItems = [];
 
-//     for (var i = 0; i < numberOfTopping; i++) {
-//         var idx = Math.floor(Math.random() * items.length);
-//         newItems.push(items[idx]);
-//         items.splice(idx, 1);
-//     }
+    for (var i = 0; i < numberOfTopping; i++) {
+        var idx = Math.floor(Math.random() * items.length);
+        newItems.push(items[idx]);
+        items.splice(idx, 1);
+    }
 
-//     return newItems;
-// }
+    return newItems;
+}
 
 
-// function create_order() {
-//     let time = {
-//         "transation_id":4,
-//         "branch_id":getRandomInt(4),
-//         "branch_name": getBranchName(branch_id),
-//         "area" : branch_id,
-//         "Date": Date(),
-//         "status": "proccessing",
-//         "pizza_topping": getRandomToppings(2)
-//     };
+function create_order() {
+    let time = {
+        "transation_id":4,
+        "branch_id":getRandomInt(4),
+        "branch_name": getBranchName(branch_id),
+        "area" : branch_id,
+        "Date": Date(),
+        "status": "proccessing",
+        "pizza_topping": getRandomToppings(2)
+    };
 
-//     console.log(time)
-// }
+    console.log(time)
+}
 
-// let display = create_order(showTime, 5000);
+let display = create_order(showTime, 5000);
