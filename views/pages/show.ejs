@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/header",title) %>
+
+<body>
+    <table border="2">
+        <% for(var i=0; i<prods.length; i++) {%>
+            <tr>
+              <td>
+                <%= prods[i].product%>
+              </td>
+              <td>
+                <%= prods[i].quantity%>
+              </td>
+            </tr>
+         <% } %>
+    </table>
+
+    <ul>
+        <% prods.forEach(function(prod) { %>
+            <li><%= prod.product %> was produced <%= prod.quantity %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "bigdata",
+  "version": "1.0.0",
+  "description": "EX1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avivdan/CloudComputingCourse.git"
+  },
+  "author": "Aviv Danino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avivdan/CloudComputingCourse/issues"
+  },
+  "homepage": "https://github.com/avivdan/CloudComputingCourse#readme",
+  "dependencies": {
+    "bigml": "^1.26.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "kafkajs": "^2.2.4",
+    "mongodb": "^5.1.0",
+    "node-rdkafka": "^2.15.0",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0"
+  }
+}
