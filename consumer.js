@@ -47,9 +47,8 @@ async function consumerExample() {
   const consumer = await createConsumer(config, ({ key, value }) => {
     console.log('--------------------------------------------------------------------------------------');
     console.log(`Consumed event from topic ${topic}: key = ${key} value = ${value}`);
-    console.log(typeof (value))
+    // console.log(typeof (value))
     console.log('--------------------------------------------------------------------------------------');
-
   });
 
   consumer.subscribe([topic]);
